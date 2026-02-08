@@ -28,7 +28,7 @@ local mason_plugins = {
 }
 local mason_registry = require("mason-registry")
 
-local function install_mason_package(name)
+local function install_package(name)
   local package = mason_registry.get_package(name)
   if not package:is_installed() then
     package:install()
@@ -36,5 +36,7 @@ local function install_mason_package(name)
 end
 
 for _, name in ipairs(mason_plugins) do
-  install_mason_package(name)
+  install_package(name)
 end
+
+return {}
