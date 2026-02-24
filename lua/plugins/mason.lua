@@ -1,7 +1,4 @@
 require("mason").setup()
-require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "pyright" }, -- Add your desired packages here
-})
 local mason_plugins = {
   "bash-language-server",
   "black",
