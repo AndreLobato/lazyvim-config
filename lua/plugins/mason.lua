@@ -6,6 +6,7 @@ return {
       "bash-language-server",
       "black",
       "codelldb",
+      "copilot-language-server",
       "docker-compose-language-service",
       "dockerfile-language-server",
       "hadolint",
