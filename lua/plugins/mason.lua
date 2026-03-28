@@ -4,7 +4,6 @@ return {
     require("mason").setup()
     local mason_plugins = {
       "bash-language-server",
-      "black",
       "codelldb",
       "copilot-language-server",
       "docker-compose-language-service",
@@ -18,6 +17,7 @@ return {
       "stylua",
       "yaml-language-server",
       "pyright",
+      "ruff",
     }
     local mason_registry = require("mason-registry")
 
