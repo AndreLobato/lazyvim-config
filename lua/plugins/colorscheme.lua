@@ -3,6 +3,8 @@ return {
   { "ellisonleao/gruvbox.nvim" },
   { "Old-Farmer/noctis-nvim" },
   { "scottmckendry/cyberdream.nvim" },
+  { "rebelot/kanagawa.nvim" },
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   {
     "folke/tokyonight.nvim",
     opts = {
@@ -18,7 +20,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "kanagawa",
     },
   },
 }
