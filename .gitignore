@@ -6,3 +6,5 @@ debug
 foo.*
 *.log
 data
+lua/.DS_Store
+lazy-lock.json
