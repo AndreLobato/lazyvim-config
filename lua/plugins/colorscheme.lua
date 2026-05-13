@@ -6,6 +6,14 @@ return {
   { "rebelot/kanagawa.nvim" },
   { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   {
+    "initsyscall/themeInitNvim",
+    url = "https://codeberg.org/initsyscall/themeInitNvim",
+    priority = 1000,
+    config = function()
+      require("themeInit").setup({ theme = "nightSyscall" })
+    end
+  },
+  {
     "folke/tokyonight.nvim",
     opts = {
       transparent = true,
@@ -20,7 +28,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "nightSyscall",
     },
   },
 }
