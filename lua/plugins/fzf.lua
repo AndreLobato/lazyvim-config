@@ -4,9 +4,9 @@ return {
     explorer = {},
     picker = {
       sources = {
-        files = { hidden = true },
-        grep = { hidden = true },
-        explorer = { hidden = true },
+        files = { hidden = true, ignored = false, exclude={ "**/__pycache__/", ".cache" }},
+        grep = { hidden = true, ignored = false},
+        explorer = { hidden = true, ignored = true},
       },
     },
   },

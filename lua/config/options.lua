@@ -5,3 +5,4 @@ vim.opt.clipboard = "unnamedplus"
 vim.g.autoformat = false
 vim.opt.relativenumber = false
 vim.g.omni_sql_no_default_maps = 1
+vim.g.root_spec = { "cwd", { ".git", "lua" }}
