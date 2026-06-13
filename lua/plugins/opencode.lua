@@ -43,9 +43,11 @@ return {
 
     vim.keymap.set({ "n", "x" }, "<leader>ao",  function() return require("opencode").operator("@this ") end,{ desc = "Add range to opencode", expr = true })
     vim.keymap.set("n", "<leader>al", function() return require("opencode").operator("@this ") .. "_" end, { desc = "Add line to opencode", expr = true })
+    vim.keymap.set({ "n", "x" }, "<leader>af",  function() return require("opencode").operator("@buffer ") end,{ desc = "Add buffer to opencode", expr = true })
 
-    vim.keymap.set("n", "<S-C-u>", function() require("opencode").command("session.half.page.up") end,   { desc = "Scroll opencode up" })
-    vim.keymap.set("n", "<S-C-d>", function() require("opencode").command("session.half.page.down") end, { desc = "Scroll opencode down" })
+    -- Scroll opencode output from normal or terminal mode
+    vim.keymap.set({ "n", "t" }, "<A-u>", function() require("opencode").command("session.half.page.up") end,   { desc = "Scroll opencode up" })
+    vim.keymap.set({ "n", "t" }, "<A-d>", function() require("opencode").command("session.half.page.down") end, { desc = "Scroll opencode down" })
 
     -- You may want these if you use the opinionated `<C-a>` and `<C-x>` keymaps above — otherwise consider `<leader>o…` (and remove terminal mode from the `toggle` keymap)
     vim.keymap.set("n", "+", "<C-a>", { desc = "Increment under cursor", noremap = true })
